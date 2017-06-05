@@ -1,0 +1,13 @@
+<h1>Note Details</h1>
+<div class="container">
+  <ul class="list-group">
+    <h3>{{note.task}}</h3>
+    <li class="list-group-item"><strong>Assigned To: {{note.assignedTo}} </strong></li>
+    <li class="list-group-item"><strong>Due Date: {{note.dueDate}}</strong></li>
+    <li class="list-group-item"><strong>Dependencies: {{note.dependencies}}</strong></li>
+    <li class="list-group-item"><strong>Location: {{note.location}}</strong></li>
+    <li class="list-group-item"><strong>Urgency: {{note.urgency}}</strong></li>
+    <li class="list-group-item"><strong>Completed: {{note.isCompleted ? "Hell Yeah" : "Hell No"}}</strong></li>
+  </ul>
+  <a ng-href="#!/note/{{note.id}}/edit">Edit</a>
+</div>

@@ -1,0 +1,30 @@
+<h1></h1>
+<form class="form--demo col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+  <div class="form-group">
+    <label>Task Description</label>
+    <input type="text" class="form-control" ng-model="editedNote.task"></input>
+  </div>
+  <div class="form-group">
+    <label>Due Date</label>
+    <input type="text" class="form-control" ng-model="editedNote.dueDate"></input>
+  </div>
+  <div class="form-group">
+    <label>Assigned To:</label>
+    <input type="text" class="form-control" ng-model="editedNote.assignedTo"></input>
+  </div>
+  <div class="form-group">
+    <label>Urgency</label>
+    <input type="text" class="form-control" ng-model="editedNote.urgency"></input>
+  </div>
+  <div class="form-group">
+    <label>Dependencies</label>
+    <input type="text" class="form-control" ng-model="editedNote.dependencies"></input>
+  </div>
+  <div class="form-group">
+    <label>Location</label>
+    <input type="text" class="form-control" ng-model="editedNote.location"></input>
+  </div>
+  <div class="text-center">
+    <button ng-click="editANote()" class="btn btn-default btn-primary">Do the thing</button>
+  </div>
+</form>
